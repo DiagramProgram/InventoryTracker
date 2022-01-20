@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block bg %} <!-- background-repeat: no-repeat; -->
+    <!-- <div style="background-size: cover; background-image: url('http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt=https://wallpaperaccess.com/full/95690.jpg"');"> -->
+        <div style="background-size: cover; background-image: url('https://wallpaperaccess.com/full/95690.jpg"');">
+{% endblock %}
+
+{% block main %}
+    <img alt="{{ top }}" class="border" style="width: 30%; height: 30%" src="http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt=https://i.pinimg.com/originals/13/09/44/130944b11d2714aeb92bfdd9ffc2b39a.jpg" title="{{ top }}">
+    <br>
+    <br>
+    <button class="btn btn-primary" onclick="window.location.href='javascript:history.back();'">Take Me Back!</button>
+{% endblock %}
